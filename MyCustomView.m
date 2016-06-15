@@ -150,7 +150,7 @@ Boolean hou= false ;
    else {
     
     squareColor= (isRed)  ? [UIColor redColor] : [UIColor blueColor];
-         //NSLog(@"GetParm<<<<<<ddd<<<entry with nil ");;
+         //NSLog(@"GetParm<<<<<<ddd<<<entry with nil ");; ///////
 
    }
   
@@ -231,8 +231,16 @@ Boolean hou= false ;
                                  selector:@selector(cleanMethod)
                                  userInfo:nil
                                   repeats:YES];
-  
-
+  if (_count == 3 ){
+    NSDate *currentDate = [NSDate date];
+    NSDate *dateP = [currentDate dateByAddingTimeInterval:60];
+  UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+  localNotification.fireDate = dateP;
+  localNotification.alertBody = [NSString stringWithFormat:@"Alert Fired at %@", dateP];
+  localNotification.soundName = UILocalNotificationDefaultSoundName;
+  localNotification.applicationIconBadgeNumber = _count;
+  [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+  }
   }
 
 - (void) targetMethod  {

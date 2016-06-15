@@ -76,11 +76,11 @@
   //NSLog(@"gggggggg");
 }
 - (void)showAlarm:(NSString *)text {
-  /*UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alarm"
+  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alarm"
                                                       message:text delegate:nil
                                             cancelButtonTitle:@"OK"
                                             otherButtonTitles:nil];
-  [alertView show];*/
+  [alertView show];
 }
 @end
 
