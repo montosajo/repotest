@@ -1,0 +1,551 @@
+BCSymbolMap Version: 1.0
+-[SiViewController viewDidLoad]
+-[SiViewController didReceiveMemoryWarning]
+-[SiViewController tvtba]
+-[SiViewController setTvtba:]
+-[SiViewController tvsc]
+-[SiViewController setTvsc:]
+-[SiViewController .cxx_destruct]
+ikas80
+OBJC_CLASS_$_SiViewController
+OBJC_CLASSLIST_SUP_REFS_$_
+OBJC_METH_VAR_NAME_
+OBJC_SELECTOR_REFERENCES_
+OBJC_CLASSLIST_REFERENCES_$_
+.str
+_unnamed_cfstring_
+.str1
+_unnamed_cfstring_2
+.str3
+_unnamed_cfstring_4
+.str5
+_unnamed_cfstring_6
+OBJC_METH_VAR_NAME_7
+OBJC_SELECTOR_REFERENCES_8
+names80
+OBJC_METH_VAR_NAME_9
+OBJC_SELECTOR_REFERENCES_10
+OBJC_METH_VAR_NAME_11
+OBJC_SELECTOR_REFERENCES_12
+OBJC_METH_VAR_NAME_13
+OBJC_SELECTOR_REFERENCES_14
+.str15
+_unnamed_cfstring_16
+OBJC_IVAR_$_SiViewController._tvtba
+OBJC_METH_VAR_NAME_17
+OBJC_SELECTOR_REFERENCES_18
+OBJC_IVAR_$_SiViewController._tvsc
+OBJC_METH_VAR_NAME_19
+OBJC_SELECTOR_REFERENCES_20
+OBJC_METH_VAR_NAME_21
+OBJC_SELECTOR_REFERENCES_22
+OBJC_CLASSLIST_REFERENCES_$_23
+OBJC_METH_VAR_NAME_24
+OBJC_SELECTOR_REFERENCES_25
+OBJC_METH_VAR_NAME_26
+OBJC_SELECTOR_REFERENCES_27
+OBJC_CLASSLIST_REFERENCES_$_28
+OBJC_METH_VAR_NAME_29
+OBJC_SELECTOR_REFERENCES_30
+OBJC_METH_VAR_NAME_31
+OBJC_SELECTOR_REFERENCES_32
+OBJC_METH_VAR_NAME_33
+OBJC_SELECTOR_REFERENCES_34
+OBJC_METH_VAR_NAME_35
+OBJC_SELECTOR_REFERENCES_36
+OBJC_CLASS_NAME_
+l_OBJC_METACLASS_RO_$_SiViewController
+OBJC_METACLASS_$_SiViewController
+OBJC_CLASS_NAME_37
+OBJC_METH_VAR_TYPE_
+OBJC_METH_VAR_NAME_38
+OBJC_METH_VAR_NAME_39
+OBJC_METH_VAR_TYPE_40
+OBJC_METH_VAR_NAME_41
+OBJC_METH_VAR_TYPE_42
+OBJC_METH_VAR_NAME_43
+OBJC_METH_VAR_NAME_44
+l_OBJC_$_INSTANCE_METHODS_SiViewController
+OBJC_METH_VAR_NAME_45
+OBJC_METH_VAR_TYPE_46
+OBJC_METH_VAR_NAME_47
+OBJC_METH_VAR_TYPE_48
+l_OBJC_$_INSTANCE_VARIABLES_SiViewController
+OBJC_PROP_NAME_ATTR_
+OBJC_PROP_NAME_ATTR_49
+OBJC_PROP_NAME_ATTR_50
+OBJC_PROP_NAME_ATTR_51
+l_OBJC_$_PROP_LIST_SiViewController
+l_OBJC_CLASS_RO_$_SiViewController
+OBJC_LABEL_CLASS_$
+Apple LLVM version 7.0.2 (clang-700.1.81)
+/Users/giorgioborgia/Library/Developer/Xcode/DerivedData/ModuleCache/X0MGTAYMR60V/CoreGraphics-1YQ59ILDR3NYI.pcm
+CoreGraphics
+/Users/giorgioborgia/Library/Developer/Xcode/DerivedData/ModuleCache/X0MGTAYMR60V/Foundation-A3SOD99KJ0S9.pcm
+Foundation
+/Users/giorgioborgia/Library/Developer/Xcode/DerivedData/ModuleCache/X0MGTAYMR60V/UIKit-2LM3EQU7VVY4O.pcm
+UIKit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework
+CGPointMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Users/giorgioborgia/Documents/aqapp/cookies2
+-[SiViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/SiViewController.m
+-[SiViewController setTvsc:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/SiViewController.h
+-[SiViewController tvsc]
+-[SiViewController setTvtba:]
+-[SiViewController tvtba]
+-[SiViewController didReceiveMemoryWarning]
+-[SiViewController viewDidLoad]
+-[FiViewController viewDidLoad]
+-[FiViewController didReceiveMemoryWarning]
+-[FiViewController tvsc]
+-[FiViewController setTvsc:]
+-[FiViewController tvtba]
+-[FiViewController setTvtba:]
+-[FiViewController .cxx_destruct]
+ikas20
+OBJC_CLASS_$_FiViewController
+.str7
+_unnamed_cfstring_8
+.str9
+_unnamed_cfstring_10
+.str11
+_unnamed_cfstring_12
+.str13
+_unnamed_cfstring_14
+.str17
+_unnamed_cfstring_18
+.str19
+_unnamed_cfstring_20
+.str21
+_unnamed_cfstring_22
+.str23
+_unnamed_cfstring_24
+.str25
+_unnamed_cfstring_26
+.str27
+_unnamed_cfstring_28
+.str29
+_unnamed_cfstring_30
+.str31
+_unnamed_cfstring_32
+.str33
+_unnamed_cfstring_34
+.str35
+_unnamed_cfstring_36
+.str37
+_unnamed_cfstring_38
+.str39
+_unnamed_cfstring_40
+.str41
+_unnamed_cfstring_42
+.str43
+_unnamed_cfstring_44
+OBJC_SELECTOR_REFERENCES_46
+names20
+.str47
+_unnamed_cfstring_48
+OBJC_METH_VAR_NAME_49
+OBJC_SELECTOR_REFERENCES_50
+OBJC_METH_VAR_NAME_51
+OBJC_SELECTOR_REFERENCES_52
+OBJC_METH_VAR_NAME_53
+OBJC_SELECTOR_REFERENCES_54
+.str55
+_unnamed_cfstring_56
+OBJC_IVAR_$_FiViewController._tvtba
+OBJC_METH_VAR_NAME_57
+OBJC_SELECTOR_REFERENCES_58
+OBJC_IVAR_$_FiViewController._tvsc
+OBJC_METH_VAR_NAME_59
+OBJC_SELECTOR_REFERENCES_60
+OBJC_METH_VAR_NAME_61
+OBJC_SELECTOR_REFERENCES_62
+OBJC_CLASSLIST_REFERENCES_$_63
+OBJC_METH_VAR_NAME_64
+OBJC_SELECTOR_REFERENCES_65
+OBJC_METH_VAR_NAME_66
+OBJC_SELECTOR_REFERENCES_67
+OBJC_METH_VAR_NAME_68
+OBJC_SELECTOR_REFERENCES_69
+OBJC_METH_VAR_NAME_70
+OBJC_SELECTOR_REFERENCES_71
+l_OBJC_METACLASS_RO_$_FiViewController
+OBJC_METACLASS_$_FiViewController
+OBJC_CLASS_NAME_72
+OBJC_METH_VAR_NAME_73
+OBJC_METH_VAR_NAME_74
+OBJC_METH_VAR_TYPE_75
+OBJC_METH_VAR_NAME_76
+OBJC_METH_VAR_TYPE_77
+OBJC_METH_VAR_NAME_78
+OBJC_METH_VAR_NAME_79
+l_OBJC_$_INSTANCE_METHODS_FiViewController
+OBJC_METH_VAR_NAME_80
+OBJC_METH_VAR_TYPE_81
+OBJC_METH_VAR_NAME_82
+OBJC_METH_VAR_TYPE_83
+l_OBJC_$_INSTANCE_VARIABLES_FiViewController
+OBJC_PROP_NAME_ATTR_84
+OBJC_PROP_NAME_ATTR_85
+OBJC_PROP_NAME_ATTR_86
+l_OBJC_$_PROP_LIST_FiViewController
+l_OBJC_CLASS_RO_$_FiViewController
+-[FiViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/FiViewController.m
+-[FiViewController setTvtba:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/FiViewController.h
+-[FiViewController tvtba]
+-[FiViewController setTvsc:]
+-[FiViewController tvsc]
+-[FiViewController didReceiveMemoryWarning]
+-[FiViewController viewDidLoad]
+-[ThViewController viewDidLoad]
+-[ThViewController didReceiveMemoryWarning]
+-[ThViewController tvsc]
+-[ThViewController setTvsc:]
+-[ThViewController tvtba]
+-[ThViewController setTvtba:]
+-[ThViewController .cxx_destruct]
+ikas3
+OBJC_CLASS_$_ThViewController
+names3
+OBJC_METH_VAR_NAME_25
+OBJC_SELECTOR_REFERENCES_26
+OBJC_METH_VAR_NAME_27
+OBJC_SELECTOR_REFERENCES_28
+OBJC_IVAR_$_ThViewController._tvtba
+OBJC_IVAR_$_ThViewController._tvsc
+OBJC_METH_VAR_NAME_37
+OBJC_SELECTOR_REFERENCES_38
+OBJC_CLASSLIST_REFERENCES_$_39
+OBJC_METH_VAR_NAME_40
+OBJC_SELECTOR_REFERENCES_41
+OBJC_METH_VAR_NAME_42
+OBJC_SELECTOR_REFERENCES_43
+OBJC_SELECTOR_REFERENCES_45
+OBJC_METH_VAR_NAME_46
+OBJC_SELECTOR_REFERENCES_47
+l_OBJC_METACLASS_RO_$_ThViewController
+OBJC_METACLASS_$_ThViewController
+OBJC_CLASS_NAME_48
+OBJC_METH_VAR_NAME_50
+OBJC_METH_VAR_TYPE_51
+OBJC_METH_VAR_NAME_52
+OBJC_METH_VAR_TYPE_53
+OBJC_METH_VAR_NAME_54
+OBJC_METH_VAR_NAME_55
+l_OBJC_$_INSTANCE_METHODS_ThViewController
+OBJC_METH_VAR_NAME_56
+OBJC_METH_VAR_TYPE_57
+OBJC_METH_VAR_NAME_58
+OBJC_METH_VAR_TYPE_59
+l_OBJC_$_INSTANCE_VARIABLES_ThViewController
+OBJC_PROP_NAME_ATTR_60
+OBJC_PROP_NAME_ATTR_61
+OBJC_PROP_NAME_ATTR_62
+l_OBJC_$_PROP_LIST_ThViewController
+l_OBJC_CLASS_RO_$_ThViewController
+-[ThViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/ThViewController.m
+-[ThViewController setTvtba:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/ThViewController.h
+-[ThViewController tvtba]
+-[ThViewController setTvsc:]
+-[ThViewController tvsc]
+-[ThViewController didReceiveMemoryWarning]
+-[ThViewController viewDidLoad]
+-[SecondViewController viewDidLoad]
+-[SecondViewController didReceiveMemoryWarning]
+-[SecondViewController tvsc]
+-[SecondViewController setTvsc:]
+-[SecondViewController tvtba]
+-[SecondViewController setTvtba:]
+-[SecondViewController .cxx_destruct]
+ikas10
+OBJC_CLASS_$_SecondViewController
+names10
+OBJC_METH_VAR_NAME_23
+OBJC_SELECTOR_REFERENCES_24
+OBJC_IVAR_$_SecondViewController._tvtba
+OBJC_IVAR_$_SecondViewController._tvsc
+OBJC_CLASSLIST_REFERENCES_$_33
+OBJC_METH_VAR_NAME_34
+OBJC_SELECTOR_REFERENCES_35
+OBJC_METH_VAR_NAME_36
+OBJC_SELECTOR_REFERENCES_37
+OBJC_SELECTOR_REFERENCES_39
+l_OBJC_METACLASS_RO_$_SecondViewController
+OBJC_METACLASS_$_SecondViewController
+OBJC_CLASS_NAME_40
+OBJC_METH_VAR_TYPE_43
+OBJC_METH_VAR_TYPE_45
+l_OBJC_$_INSTANCE_METHODS_SecondViewController
+OBJC_METH_VAR_NAME_48
+OBJC_METH_VAR_TYPE_49
+l_OBJC_$_INSTANCE_VARIABLES_SecondViewController
+OBJC_PROP_NAME_ATTR_52
+OBJC_PROP_NAME_ATTR_53
+OBJC_PROP_NAME_ATTR_54
+l_OBJC_$_PROP_LIST_SecondViewController
+l_OBJC_CLASS_RO_$_SecondViewController
+-[SecondViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/SecondViewController.m
+-[SecondViewController setTvtba:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/SecondViewController.h
+-[SecondViewController tvtba]
+-[SecondViewController setTvsc:]
+-[SecondViewController tvsc]
+-[SecondViewController didReceiveMemoryWarning]
+-[SecondViewController viewDidLoad]
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate .cxx_destruct]
+OBJC_IVAR_$_AppDelegate._window
+OBJC_METH_VAR_TYPE_1
+OBJC_METH_VAR_NAME_2
+OBJC_METH_VAR_TYPE_3
+OBJC_METH_VAR_TYPE_4
+OBJC_METH_VAR_NAME_5
+OBJC_METH_VAR_NAME_6
+OBJC_METH_VAR_NAME_8
+OBJC_METH_VAR_TYPE_9
+OBJC_METH_VAR_NAME_10
+OBJC_METH_VAR_TYPE_11
+OBJC_METH_VAR_TYPE_12
+OBJC_METH_VAR_TYPE_14
+OBJC_METH_VAR_TYPE_15
+OBJC_METH_VAR_NAME_16
+OBJC_METH_VAR_NAME_18
+OBJC_METH_VAR_TYPE_20
+OBJC_METH_VAR_TYPE_21
+OBJC_METH_VAR_NAME_22
+OBJC_METH_VAR_TYPE_23
+OBJC_METH_VAR_TYPE_24
+OBJC_METH_VAR_TYPE_26
+OBJC_METH_VAR_TYPE_27
+OBJC_METH_VAR_NAME_28
+OBJC_METH_VAR_TYPE_30
+OBJC_METH_VAR_TYPE_31
+OBJC_METH_VAR_NAME_32
+OBJC_METH_VAR_TYPE_33
+OBJC_METH_VAR_TYPE_35
+OBJC_METH_VAR_TYPE_37
+OBJC_METH_VAR_TYPE_39
+OBJC_METH_VAR_TYPE_41
+OBJC_METH_VAR_TYPE_44
+OBJC_METH_VAR_TYPE_47
+OBJC_METH_VAR_TYPE_52
+OBJC_METH_VAR_TYPE_54
+OBJC_METH_VAR_TYPE_55
+OBJC_METH_VAR_NAME_60
+OBJC_METH_VAR_TYPE_61
+OBJC_METH_VAR_NAME_62
+OBJC_METH_VAR_NAME_63
+OBJC_METH_VAR_NAME_65
+OBJC_METH_VAR_NAME_67
+OBJC_METH_VAR_TYPE_68
+OBJC_METH_VAR_TYPE_69
+OBJC_METH_VAR_TYPE_71
+OBJC_METH_VAR_NAME_72
+OBJC_METH_VAR_TYPE_73
+OBJC_METH_VAR_TYPE_74
+OBJC_METH_VAR_NAME_75
+OBJC_METH_VAR_TYPE_76
+OBJC_METH_VAR_NAME_77
+OBJC_METH_VAR_TYPE_79
+OBJC_METH_VAR_NAME_81
+OBJC_METH_VAR_TYPE_84
+OBJC_METH_VAR_NAME_85
+OBJC_METH_VAR_TYPE_86
+OBJC_METH_VAR_TYPE_87
+OBJC_METH_VAR_NAME_88
+OBJC_METH_VAR_TYPE_89
+OBJC_METH_VAR_NAME_90
+OBJC_METH_VAR_TYPE_91
+OBJC_METH_VAR_TYPE_92
+OBJC_METH_VAR_NAME_93
+OBJC_METH_VAR_TYPE_94
+OBJC_CLASS_NAME_95
+OBJC_METH_VAR_NAME_96
+OBJC_METH_VAR_TYPE_97
+OBJC_METH_VAR_NAME_98
+OBJC_METH_VAR_TYPE_99
+OBJC_METH_VAR_NAME_100
+OBJC_METH_VAR_NAME_101
+OBJC_METH_VAR_TYPE_102
+OBJC_METH_VAR_NAME_103
+OBJC_METH_VAR_TYPE_104
+OBJC_METH_VAR_NAME_105
+OBJC_METH_VAR_TYPE_106
+OBJC_METH_VAR_NAME_107
+OBJC_METH_VAR_TYPE_108
+OBJC_METH_VAR_NAME_109
+OBJC_METH_VAR_TYPE_110
+OBJC_METH_VAR_NAME_111
+OBJC_METH_VAR_NAME_112
+OBJC_METH_VAR_TYPE_113
+OBJC_METH_VAR_NAME_114
+OBJC_METH_VAR_TYPE_115
+OBJC_METH_VAR_NAME_116
+OBJC_METH_VAR_NAME_117
+OBJC_METH_VAR_TYPE_118
+OBJC_METH_VAR_NAME_119
+OBJC_METH_VAR_NAME_120
+OBJC_METH_VAR_TYPE_121
+OBJC_METH_VAR_NAME_122
+OBJC_METH_VAR_TYPE_123
+OBJC_METH_VAR_NAME_124
+OBJC_METH_VAR_NAME_125
+OBJC_METH_VAR_NAME_126
+OBJC_METH_VAR_TYPE_127
+OBJC_METH_VAR_NAME_128
+OBJC_CLASS_NAME_129
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+OBJC_PROP_NAME_ATTR_130
+OBJC_PROP_NAME_ATTR_131
+OBJC_PROP_NAME_ATTR_132
+OBJC_PROP_NAME_ATTR_133
+OBJC_PROP_NAME_ATTR_134
+OBJC_PROP_NAME_ATTR_135
+l_OBJC_$_PROP_LIST_NSObject
+l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+OBJC_PROP_NAME_ATTR_136
+OBJC_PROP_NAME_ATTR_137
+l_OBJC_$_PROP_LIST_UIApplicationDelegate
+l_OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_CLASS_PROTOCOLS_$_AppDelegate
+l_OBJC_METACLASS_RO_$_AppDelegate
+OBJC_METACLASS_$_AppDelegate
+OBJC_CLASS_NAME_138
+OBJC_METH_VAR_NAME_139
+OBJC_METH_VAR_TYPE_140
+l_OBJC_$_INSTANCE_METHODS_AppDelegate
+OBJC_METH_VAR_NAME_141
+OBJC_METH_VAR_TYPE_142
+l_OBJC_$_INSTANCE_VARIABLES_AppDelegate
+OBJC_PROP_NAME_ATTR_143
+l_OBJC_$_PROP_LIST_AppDelegate
+l_OBJC_CLASS_RO_$_AppDelegate
+OBJC_CLASS_$_AppDelegate
+-[AppDelegate .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/AppDelegate.m
+-[AppDelegate setWindow:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/AppDelegate.h
+-[AppDelegate window]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[FirstViewController viewDidLoad]
+-[FirstViewController didReceiveMemoryWarning]
+-[FirstViewController tvsc]
+-[FirstViewController setTvsc:]
+-[FirstViewController tvtba]
+-[FirstViewController setTvtba:]
+-[FirstViewController .cxx_destruct]
+ikas
+OBJC_CLASS_$_FirstViewController
+names1
+OBJC_IVAR_$_FirstViewController._tvtba
+OBJC_IVAR_$_FirstViewController._tvsc
+l_OBJC_METACLASS_RO_$_FirstViewController
+OBJC_METACLASS_$_FirstViewController
+l_OBJC_$_INSTANCE_METHODS_FirstViewController
+l_OBJC_$_INSTANCE_VARIABLES_FirstViewController
+l_OBJC_$_PROP_LIST_FirstViewController
+l_OBJC_CLASS_RO_$_FirstViewController
+-[FirstViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/FirstViewController.m
+-[FirstViewController setTvtba:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/FirstViewController.h
+-[FirstViewController tvtba]
+-[FirstViewController setTvsc:]
+-[FirstViewController tvsc]
+-[FirstViewController didReceiveMemoryWarning]
+-[FirstViewController viewDidLoad]
+-[SvViewController viewDidLoad]
+-[SvViewController didReceiveMemoryWarning]
+-[SvViewController tvtba]
+-[SvViewController setTvtba:]
+-[SvViewController tvsc]
+-[SvViewController setTvsc:]
+-[SvViewController .cxx_destruct]
+ikas70
+OBJC_CLASS_$_SvViewController
+OBJC_SELECTOR_REFERENCES_6
+names70
+OBJC_IVAR_$_SvViewController._tvtba
+OBJC_METH_VAR_NAME_15
+OBJC_SELECTOR_REFERENCES_16
+OBJC_IVAR_$_SvViewController._tvsc
+OBJC_CLASSLIST_REFERENCES_$_21
+OBJC_SELECTOR_REFERENCES_23
+OBJC_CLASSLIST_REFERENCES_$_26
+l_OBJC_METACLASS_RO_$_SvViewController
+OBJC_METACLASS_$_SvViewController
+OBJC_CLASS_NAME_35
+OBJC_METH_VAR_TYPE_38
+l_OBJC_$_INSTANCE_METHODS_SvViewController
+l_OBJC_$_INSTANCE_VARIABLES_SvViewController
+OBJC_PROP_NAME_ATTR_47
+OBJC_PROP_NAME_ATTR_48
+l_OBJC_$_PROP_LIST_SvViewController
+l_OBJC_CLASS_RO_$_SvViewController
+-[SvViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/SvViewController.m
+-[SvViewController setTvsc:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/SvViewController.h
+-[SvViewController tvsc]
+-[SvViewController setTvtba:]
+-[SvViewController tvtba]
+-[SvViewController didReceiveMemoryWarning]
+-[SvViewController viewDidLoad]
+-[FtViewController viewDidLoad]
+-[FtViewController didReceiveMemoryWarning]
+-[FtViewController tvsc]
+-[FtViewController setTvsc:]
+-[FtViewController tvtba]
+-[FtViewController setTvtba:]
+-[FtViewController .cxx_destruct]
+ikas4
+OBJC_CLASS_$_FtViewController
+names4
+OBJC_IVAR_$_FtViewController._tvtba
+OBJC_IVAR_$_FtViewController._tvsc
+OBJC_CLASSLIST_REFERENCES_$_31
+OBJC_SELECTOR_REFERENCES_33
+l_OBJC_METACLASS_RO_$_FtViewController
+OBJC_METACLASS_$_FtViewController
+l_OBJC_$_INSTANCE_METHODS_FtViewController
+l_OBJC_$_INSTANCE_VARIABLES_FtViewController
+l_OBJC_$_PROP_LIST_FtViewController
+l_OBJC_CLASS_RO_$_FtViewController
+-[FtViewController .cxx_destruct]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/FtViewController.m
+-[FtViewController setTvtba:]
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/FtViewController.h
+-[FtViewController tvtba]
+-[FtViewController setTvsc:]
+-[FtViewController tvsc]
+-[FtViewController didReceiveMemoryWarning]
+-[FtViewController viewDidLoad]
+main
+/Users/giorgioborgia/Documents/aqapp/cookies2/cookies2/main.m
