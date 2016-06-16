@@ -48,7 +48,7 @@ RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location date:(
   NSDate *fireTime = [[NSDate date] addTimeInterval:22]; // adds 10 secs
   localNotif.fireDate = fireTime;
   localNotif.alertBody = @"Alert!";
-  [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
+  //[[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
    //NSLog(@"Ich bin in Obj C zuruck  \n" );
   //[localNotif release];
 }

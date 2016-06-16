@@ -231,7 +231,7 @@ Boolean hou= false ;
                                  selector:@selector(cleanMethod)
                                  userInfo:nil
                                   repeats:YES];
-  if (_count == 3 ){
+  if (_count == 999 ){
     NSDate *currentDate = [NSDate date];
     NSDate *dateP = [currentDate dateByAddingTimeInterval:60];
   UILocalNotification *localNotification = [[UILocalNotification alloc] init];

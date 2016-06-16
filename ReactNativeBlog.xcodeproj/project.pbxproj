@@ -69,8 +69,6 @@
 		7C7202D51CFFACB400F0204D /* n2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C7202D41CFFACB400F0204D /* n2.mp3 */; };
 		7C9585AD1CEB956600D9C069 /* Hoja6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7C9585AC1CEB956500D9C069 /* Hoja6.JPG */; };
 		7C9585BA1CEBB3A800D9C069 /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C9585B91CEBB3A800D9C069 /* AcousticModelSpanish.bundle */; };
-		7C9585EC1CEE921A00D9C069 /* UIresa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9585EB1CEE921900D9C069 /* UIresa.m */; };
-		7CAE893B1CE66E450037D375 /* FirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAE893A1CE66E450037D375 /* FirstViewController_iPad.xib */; };
 		7CC2DBE31D07511200D13221 /* ajax-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7CC2DBE21D07511200D13221 /* ajax-loader.gif */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
@@ -236,10 +234,6 @@
 		7C7202D41CFFACB400F0204D /* n2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = n2.mp3; sourceTree = "<group>"; };
 		7C9585AC1CEB956500D9C069 /* Hoja6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoja6.JPG; sourceTree = "<group>"; };
 		7C9585B91CEBB3A800D9C069 /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
-		7C9585EB1CEE921900D9C069 /* UIresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIresa.m; sourceTree = "<group>"; };
-		7C9585F81CEE923800D9C069 /* UIresa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIresa.h; sourceTree = "<group>"; };
-		7CAE89371CE667FB0037D375 /* adas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adas.h; sourceTree = "<group>"; };
-		7CAE893A1CE66E450037D375 /* FirstViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController_iPad.xib; sourceTree = "<group>"; };
 		7CC2DBE21D07511200D13221 /* ajax-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ajax-loader.gif"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -353,54 +347,21 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeBlog */ = {
 			isa = PBXGroup;
 			children = (
+				7C69EF571CD536F200FB0341 /* CM1.m */,
+				7C633C451CD8232D00C672D1 /* CalendarManager.m */,
+				7C633C2E1CD7C6BA00C672D1 /* MCFileWriterUtil.h */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-				7C4376171CC6F60400AECFE8 /* 3227-1260.mp3 */,
+				7C633C3A1CD7C70100C672D1 /* MCFileWriterUtil.m */,
 				7C633C671CD9394E00C672D1 /* MyCustomView.m */,
-				7CAE893A1CE66E450037D375 /* FirstViewController_iPad.xib */,
 				7C633C691CD9395A00C672D1 /* MyCustomViewManager.h */,
 				7C6C2B671CD243C500D58A0E /* CalendarManager.h */,
 				7C633C5B1CD9394200C672D1 /* MyCustomView.h */,
-				7C1004001D0C788500D5C484 /* 1x1.gif */,
-				7CC2DBE21D07511200D13221 /* ajax-loader.gif */,
 				7C633C6C1CD9445D00C672D1 /* Framework */,
 				7C633C6A1CD9396700C672D1 /* MyCustomViewManager.m */,
 				7C69EF641CD537A800FB0341 /* CM1.h */,
-				7C4376151CC6F5F400AECFE8 /* 3227-1257.mp3 */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				7C5A3BF21CFD16D400B3A219 /* beep.mp3 */,
-				7C4376191CC6F6BA00AECFE8 /* 3227-1277.mp3 */,
-				7C43761A1CC6F6BA00AECFE8 /* 3227-1280.mp3 */,
-				7C43763F1CC943B600AECFE8 /* 3227-738.mp3 */,
-				7C43761B1CC6F6BA00AECFE8 /* 3227-744.mp3 */,
-				7C43761C1CC6F6BA00AECFE8 /* 3227-747.mp3 */,
-				7C43762B1CC6F6E300AECFE8 /* 3227-768.mp3 */,
-				7C43762C1CC6F6E300AECFE8 /* 3227-775.mp3 */,
-				7C43762D1CC6F6E300AECFE8 /* 3227-778.mp3 */,
-				7C43762E1CC6F6E300AECFE8 /* 3227-781.mp3 */,
-				7C43762F1CC6F6E300AECFE8 /* 3227-784.mp3 */,
-				7C4376301CC6F6E300AECFE8 /* 3227-788.mp3 */,
-				7C4376311CC6F6E300AECFE8 /* 3227-791.mp3 */,
-				7C4376321CC6F6E300AECFE8 /* 3227-794.mp3 */,
-				7C4376331CC6F6E300AECFE8 /* 3227-797.mp3 */,
-				7C4376341CC6F6E300AECFE8 /* 3227-800.mp3 */,
-				7C43761D1CC6F6BA00AECFE8 /* 3227-752.mp3 */,
-				7C43761E1CC6F6BA00AECFE8 /* 3227-756.mp3 */,
-				7C9585AC1CEB956500D9C069 /* Hoja6.JPG */,
-				7C43761F1CC6F6BA00AECFE8 /* 3227-759.mp3 */,
-				7C4376201CC6F6BA00AECFE8 /* 3227-762.mp3 */,
-				7C4376211CC6F6BA00AECFE8 /* 3227-765.mp3 */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				7C6C2B311CD0007F00D58A0E /* MaterialIcons.ttf */,
-				7C6C2B321CD0008000D58A0E /* EvilIcons.ttf */,
-				7C6C2B331CD0008000D58A0E /* Ionicons.ttf */,
-				7C6C2B341CD0008000D58A0E /* Octicons.ttf */,
-				7C6C2B351CD0008000D58A0E /* Entypo.ttf */,
-				7C7202D41CFFACB400F0204D /* n2.mp3 */,
-				7C6C2B361CD0008000D58A0E /* FontAwesome.ttf */,
-				7C6C2B371CD0008000D58A0E /* Foundation.ttf */,
-				7C6C2B381CD0008000D58A0E /* Zocial.ttf */,
-				7C7202C71CFF635400F0204D /* drum01.mp3 */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -443,6 +404,57 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
+		7CFEA3D01D12F436001A960C /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7C43761A1CC6F6BA00AECFE8 /* 3227-1280.mp3 */,
+				7C43763F1CC943B600AECFE8 /* 3227-738.mp3 */,
+				7C4376191CC6F6BA00AECFE8 /* 3227-1277.mp3 */,
+				7C43761B1CC6F6BA00AECFE8 /* 3227-744.mp3 */,
+				7C43761C1CC6F6BA00AECFE8 /* 3227-747.mp3 */,
+				7C43762B1CC6F6E300AECFE8 /* 3227-768.mp3 */,
+				7C43762C1CC6F6E300AECFE8 /* 3227-775.mp3 */,
+				7C43762D1CC6F6E300AECFE8 /* 3227-778.mp3 */,
+				7C43762E1CC6F6E300AECFE8 /* 3227-781.mp3 */,
+				7C43762F1CC6F6E300AECFE8 /* 3227-784.mp3 */,
+				7C4376301CC6F6E300AECFE8 /* 3227-788.mp3 */,
+				7C7202D41CFFACB400F0204D /* n2.mp3 */,
+				7C4376311CC6F6E300AECFE8 /* 3227-791.mp3 */,
+				7C5A3BF21CFD16D400B3A219 /* beep.mp3 */,
+				7C7202C71CFF635400F0204D /* drum01.mp3 */,
+				7C4376321CC6F6E300AECFE8 /* 3227-794.mp3 */,
+				7C4376331CC6F6E300AECFE8 /* 3227-797.mp3 */,
+				7C4376341CC6F6E300AECFE8 /* 3227-800.mp3 */,
+				7C43761D1CC6F6BA00AECFE8 /* 3227-752.mp3 */,
+				7C43761E1CC6F6BA00AECFE8 /* 3227-756.mp3 */,
+				7C4376151CC6F5F400AECFE8 /* 3227-1257.mp3 */,
+				7C43761F1CC6F6BA00AECFE8 /* 3227-759.mp3 */,
+				7C4376201CC6F6BA00AECFE8 /* 3227-762.mp3 */,
+				7C4376211CC6F6BA00AECFE8 /* 3227-765.mp3 */,
+				7C4376171CC6F60400AECFE8 /* 3227-1260.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		7CFEA3DC1D12F686001A960C /* testthings */ = {
+			isa = PBXGroup;
+			children = (
+				7C633C421CD814CB00C672D1 /* RCTMapManager.m */,
+				7C6C2B311CD0007F00D58A0E /* MaterialIcons.ttf */,
+				7C6C2B321CD0008000D58A0E /* EvilIcons.ttf */,
+				7C6C2B331CD0008000D58A0E /* Ionicons.ttf */,
+				7C6C2B341CD0008000D58A0E /* Octicons.ttf */,
+				7C6C2B351CD0008000D58A0E /* Entypo.ttf */,
+				7C6C2B361CD0008000D58A0E /* FontAwesome.ttf */,
+				7C6C2B371CD0008000D58A0E /* Foundation.ttf */,
+				7C6C2B381CD0008000D58A0E /* Zocial.ttf */,
+				7C9585AC1CEB956500D9C069 /* Hoja6.JPG */,
+				7CC2DBE21D07511200D13221 /* ajax-loader.gif */,
+				7C1004001D0C788500D5C484 /* 1x1.gif */,
+			);
+			name = testthings;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,16 +484,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				7C9585EB1CEE921900D9C069 /* UIresa.m */,
-				7C9585F81CEE923800D9C069 /* UIresa.h */,
-				7CAE89371CE667FB0037D375 /* adas.h */,
+				7CFEA3DC1D12F686001A960C /* testthings */,
 				7C633C751CD9485000C672D1 /* AVFoundation.framework */,
 				7C633C731CD9484600C672D1 /* AudioToolbox.framework */,
-				7C633C421CD814CB00C672D1 /* RCTMapManager.m */,
-				7C633C451CD8232D00C672D1 /* CalendarManager.m */,
-				7C69EF571CD536F200FB0341 /* CM1.m */,
-				7C633C2E1CD7C6BA00C672D1 /* MCFileWriterUtil.h */,
-				7C633C3A1CD7C70100C672D1 /* MCFileWriterUtil.m */,
+				7CFEA3D01D12F436001A960C /* sounds */,
 				13B07FAE1A68108700A75B9A /* ReactNativeBlog */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeBlogTests */,
@@ -733,7 +739,6 @@
 				7C6C2B3A1CD0008000D58A0E /* EvilIcons.ttf in Resources */,
 				7C6C2B3E1CD0008000D58A0E /* FontAwesome.ttf in Resources */,
 				7C9585BA1CEBB3A800D9C069 /* AcousticModelSpanish.bundle in Resources */,
-				7CAE893B1CE66E450037D375 /* FirstViewController_iPad.xib in Resources */,
 				7C5A3BF31CFD16D400B3A219 /* beep.mp3 in Resources */,
 				7C4376351CC6F6E300AECFE8 /* 3227-768.mp3 in Resources */,
 				7C7202C81CFF635400F0204D /* drum01.mp3 in Resources */,
@@ -795,7 +800,6 @@
 				7C633C681CD9394E00C672D1 /* MyCustomView.m in Sources */,
 				7C633C461CD8232D00C672D1 /* CalendarManager.m in Sources */,
 				7C633C6B1CD9396700C672D1 /* MyCustomViewManager.m in Sources */,
-				7C9585EC1CEE921A00D9C069 /* UIresa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
