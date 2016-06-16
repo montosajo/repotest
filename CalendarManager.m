@@ -29,9 +29,9 @@ RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location date:(
     
     if (grantedSettings.types == UIUserNotificationTypeNone) {
       //NSLog(@"No permission granted");
-      [[UIApplication sharedApplication] registerForRemoteNotifications];
+     /* [[UIApplication sharedApplication] registerForRemoteNotifications];
       UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
-      [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+      [[UIApplication sharedApplication] registerUserNotificationSettings:settings];*/
       
 
     }
@@ -43,7 +43,7 @@ RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location date:(
     }
   }
   
-  UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+  /*UILocalNotification *localNotif = [[UILocalNotification alloc] init];
   if (localNotif == nil) return;
   NSDate *fireTime = [[NSDate date] addTimeInterval:22]; // adds 10 secs
   localNotif.fireDate = fireTime;
@@ -51,11 +51,10 @@ RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location date:(
   //[[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
    //NSLog(@"Ich bin in Obj C zuruck  \n" );
   //[localNotif release];
+  */
 }
 
--(void) theAction {
-  //NSLog(@"Will appear after a 2 second delay.");
-}
+
 
 @end
 

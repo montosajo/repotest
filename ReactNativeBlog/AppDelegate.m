@@ -88,22 +88,5 @@
 }
 
 
-
-
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
-{
-  
-  [self showAlarm:notification.alertBody];
-  application.applicationIconBadgeNumber = 0;
-  //NSLog(@"AppDelegate didReceiveLocalNotification %@", notification.userInfo);
-  //NSLog(@"gggggggg");
-}
-- (void)showAlarm:(NSString *)text {
-  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alarm"
-                                                      message:text delegate:nil
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-  [alertView show];
-}
 @end
 

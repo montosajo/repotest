@@ -172,8 +172,8 @@ Boolean hou= false ;
   UIImage* image1 = [UIImage imageNamed:@"759.jpg"];
   //initial image
   image1 = [UIImage imageNamed:[_myColors objectAtIndex: _count]] ;
-  //UIImage *scaledImage = [image1 scaleToSize:CGSizeMake(300.0f, 221.0f)];
-  UIImage *scaledImage = [image1 scaleToSize:CGSizeMake(150.0f, 110.0f)];
+  UIImage *scaledImage = [image1 scaleToSize:CGSizeMake(300.0f, 221.0f)];
+  //UIImage *scaledImage = [image1 scaleToSize:CGSizeMake(150.0f, 110.0f)];
   _imageView = [[UIImageView alloc] initWithImage: scaledImage];
   
   [_imageView setImage:scaledImage];
@@ -185,8 +185,8 @@ Boolean hou= false ;
   wida= wida/2.0;
   
   //NSLog(@"%f",wida);
- // _imageView.frame = CGRectMake(wida,70,300,221); // position it to the middle
-   _imageView.frame = CGRectMake(wida,40,150,110);
+  _imageView.frame = CGRectMake(wida,70,300,221); // position it to the middle
+ //  _imageView.frame = CGRectMake(wida,40,150,110);
   [self addSubview:_imageView];
   
   float basex =window.frame.size.width * .06;
