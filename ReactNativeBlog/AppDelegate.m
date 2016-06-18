@@ -85,6 +85,7 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
   [RCTPushNotificationManager didReceiveLocalNotification:notification];
+  NSLog (@"Enigma dxmittinf");
 }
 
 
