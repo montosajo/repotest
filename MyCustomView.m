@@ -16,6 +16,7 @@
 #import "UIresa.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#import "dbm.h"
 Boolean hou= false ;
 @interface MyCustomView ()
 //<OEEventsObserverDelegate>
@@ -29,6 +30,7 @@ Boolean hou= false ;
 @property NSArray *mySound;
 @property UIButton *tonbo;
 @property NSArray *mockedData;
+
 @property NSString *texta;
 @property UILabel *yourLabel;
 @property BOOL *halt ;
@@ -159,9 +161,7 @@ Boolean hou= false ;
 - (void)drawRect:(CGRect)rect
 {
   
-  // NSLog(@"Original: %s (length %lu)", "sounds", (unsigned long)_mySound.count);
-  //NSLog(@"Original: %s (length %lu)", "imas", (unsigned long)_myColors.count);
-  //NSLog(@"Original: %s (length %lu)", "texts", (unsigned long)_mockedData.count);
+  
   [squareColor setFill];
   [NSTimer scheduledTimerWithTimeInterval:5.0
                                    target:self
@@ -205,7 +205,6 @@ Boolean hou= false ;
   larga =window.frame.size.width * .88;
   [_yourLabel setUserInteractionEnabled: YES];
   _yourLabel.frame=CGRectMake(basex,360,larga,60.0);
-  //  yourLabel.text =@"Asiago is an Italian cow's milk cheese that can assume different textures, according to its aging, from smooth for the fresh Asiago to a crumbly texture for the aged cheese";
   
    [self  addSubview:_yourLabel];
   //initial text used as place holder
@@ -231,20 +230,69 @@ Boolean hou= false ;
                                  selector:@selector(cleanMethod)
                                  userInfo:nil
                                   repeats:YES];
-  if (_count == 999 ){
-    NSDate *currentDate = [NSDate date];
-    NSDate *dateP = [currentDate dateByAddingTimeInterval:60];
-  UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-  localNotification.fireDate = dateP;
-  localNotification.alertBody = [NSString stringWithFormat:@"Alert Fired at %@", dateP];
-  localNotification.soundName = UILocalNotificationDefaultSoundName;
-  localNotification.applicationIconBadgeNumber = _count;
-  [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-  }
+  
   }
 
 - (void) targetMethod  {
   // make the move
+  
+  NSInteger  _mockedT[25]={
+    0,
+    0,
+    
+    60,
+    
+    0,
+    
+    0,
+    
+    
+    0,
+    
+    0,
+    
+    0,
+    
+    0,
+    
+    
+    0,
+    
+    0,
+    
+    0,
+    
+    
+    180,
+    
+    0,
+    
+    180,
+    
+    
+    0,
+    
+    
+    180,
+    
+    
+    0,
+    
+    
+    180,
+    
+    
+    0,
+    
+    
+    0,
+    
+    
+    0,
+    
+    0,
+    
+    0  };
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   NSString *ordo = [defaults stringForKey:@"Hoch"];
   if ([ordo  isEqual: @"next"]&& _halt ==NO){
@@ -253,6 +301,35 @@ Boolean hou= false ;
     [defaults synchronize];
     if ( _count > _mockedData.count -1 ) {
       _count =1;
+    }
+    else{
+      if (_mockedT[ _count] > 0) {
+      UILocalNotification* local = [[UILocalNotification alloc]init];
+      if (local)
+      {
+        local.fireDate = [NSDate dateWithTimeIntervalSinceNow:1.0];
+        local.alertBody = @"ZCZCZC";
+        local.timeZone = [NSTimeZone defaultTimeZone];
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:local];
+
+        
+        double delta=_mockedT [_count];
+        local.fireDate = [NSDate dateWithTimeIntervalSinceNow:delta];
+        local.alertBody = @"A Recipe Waiting Timer  ended !!!";
+        local.timeZone = [NSTimeZone defaultTimeZone];
+        local.applicationIconBadgeNumber= _count;
+        [[UIApplication sharedApplication] scheduleLocalNotification:local];
+        
+        local.fireDate = [NSDate dateWithTimeIntervalSinceNow:delta];
+        local.alertBody = @"ZDZDZD";
+        local.timeZone = [NSTimeZone defaultTimeZone];
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:local];
+
+        
+      }
+      }
     }
     [self setNeedsDisplay];
   }
@@ -280,4 +357,6 @@ Boolean hou= false ;
  
   [self setHalt:NO];
 }
+
+
 @end

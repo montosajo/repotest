@@ -14,12 +14,40 @@
 #import <OpenEars/OEEventsObserver.h>
 #import "RCTRootView.h"
 #import "RCTPushNotificationManager.h"
+#import "dbm.h"
+@implementation MyManager
+@synthesize somearr;
+@synthesize someProperty;
+
++ (id)sharedManager {
+  static MyManager *sharedMyManager = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    sharedMyManager = [[self alloc] init];
+  });
+  return sharedMyManager;
+}
+
+- (id)init {
+  if (self = [super init]) {
+    someProperty = @"TRRRROOOLO Default Property Value";
+    somearr=nil;
+  }
+  return self;
+}
+
+- (void)dealloc {
+  // Should never be called, but just here for clarity really.
+}
+
+@end
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+ 
   NSURL *jsCodeLocation;
-
+ 
   /**
    * Loading JavaScript code - uncomment the one you want.
    *
@@ -44,7 +72,7 @@
    * simulator in the "Release" build configuration.
    */
 
-   //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+ //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"ReactNativeBlog"
@@ -56,7 +84,10 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  
+  // load all db data
+ 
+  self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"sampledb.sql"];
+  [self loadData];
   
   return YES;
   
@@ -66,7 +97,22 @@
   
 
 }
-
+-(void)loadData{
+  // Form the query.
+  NSString *query = @"select * from recipe";
+  
+  // Get the results.
+  if (self.arrPeopleInfo != nil) {
+    self.arrPeopleInfo = nil;
+  }
+  self.arrPeopleInfo = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
+    NSLog(@"xxxx");
+  //
+  MyManager *shManager =[MyManager sharedManager];
+  shManager.someProperty =@"XXX";
+  shManager.somearr =_arrPeopleInfo;
+  
+}
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
 {
   [RCTPushNotificationManager didRegisterUserNotificationSettings:notificationSettings];
@@ -84,8 +130,23 @@
 // Required for the localNotification event.
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-  [RCTPushNotificationManager didReceiveLocalNotification:notification];
-  NSLog (@"Enigma dxmittinf");
+ [RCTPushNotificationManager didReceiveLocalNotification:notification];
+  NSLog (@"Enigma processing ");
+  UIApplicationState state = [application applicationState];
+  if (state == UIApplicationStateActive)
+  {
+      if ([notification.alertBody rangeOfString:@"ZC"].location != NSNotFound || 1==1 )  {
+      //just ignore it from Objc C POV will impact jsx only
+    }
+    else {
+        //this is the visible end of timer action 
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Timer Ended " message:notification.alertBody
+                                                   delegate:self cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+        [alert show];
+  
+    }
+  }
 }
 
 

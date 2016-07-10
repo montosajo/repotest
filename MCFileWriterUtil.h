@@ -12,6 +12,7 @@
 
 @interface MCFileWriterUtil : NSObject <RCTBridgeModule>
 
+@property (nonatomic, retain) NSMutableArray *secondArr;
 @end
 
 #endif /* MCFileWriterUtil_h */

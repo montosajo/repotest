@@ -1,5 +1,6 @@
 //
 //  MCFileWriterUtil.m
+//  
 //  ReactNativeBlog
 //  This code triggers on/off the voice recognition from Polipetix
 //  Also sets a User setting with the input
@@ -17,17 +18,20 @@
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "MCFileWriterUtil.h"
-
-
-
+#import "dbm.h"
+#import "AppDelegate.h"
 @interface MCFileWriterUtil() <OEEventsObserverDelegate>
 
 @property (strong, nonatomic) OEEventsObserver *openEarsEventsObserver;
+
+@property (nonatomic, strong) DBManager *dbManager;
+
 
 
 @end
 
 @implementation MCFileWriterUtil
+
 
 // Expose this module to the React Native bridge
 RCT_EXPORT_MODULE()
@@ -41,10 +45,11 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
   //NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
   //
   if ( [fileName  isEqual: @"Y"]){
-  
-  //start
-  
-  
+  //
+        //
+  MyManager *shManager =[MyManager sharedManager];
+  NSLog([shManager someProperty]);
+  int wer =   shManager.somearr.count;
   self.openEarsEventsObserver = [[OEEventsObserver alloc] init];
   [self.openEarsEventsObserver setDelegate:self];
   OELanguageModelGenerator *lmGenerator = [[OELanguageModelGenerator alloc] init];
@@ -64,12 +69,11 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
   } else {
     //NSLog(@"Error: %@",[err localizedDescription]);
   }
-  // NSString *path = [[NSBundle mainBundle] pathForResource: @"Hoja6" ofType: @"JPG"];
-  // NSLog(@"path: %@", path);
+  
   [[OEPocketsphinxController sharedInstance] setActive:TRUE error:nil];
   [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to perform Spanish recognition instead of English.
   
-  }//if order Y
+  }//if order N
   else if ( [fileName  isEqual: @"N"]){
     
     [[OEPocketsphinxController sharedInstance] setActive:FALSE  error:nil];
@@ -82,7 +86,44 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"next"  forKey:@"Hoch"];
     [defaults synchronize];
+    
+  
   }
+  else if ( [fileName  isEqual: @"Z"]){
+    UIApplication *app = [UIApplication sharedApplication];
+    NSArray *eventArray = [app scheduledLocalNotifications];
+    for (int i=0; i<[eventArray count]; i++)
+    {
+      UILocalNotification* oneEvent = [eventArray objectAtIndex:i];
+      NSDictionary *userInfoCurrent = oneEvent.userInfo;
+      NSString *uid=[NSString stringWithFormat:@"%@",[userInfoCurrent valueForKey:@"uid"]];
+      if ([uid isEqualToString:@"Z"] || 1==1 )
+      {
+        //Cancelling local notification
+        [app cancelLocalNotification:oneEvent];
+        //
+        UILocalNotification* local = [[UILocalNotification alloc]init];
+        if (local)
+        {
+          local.fireDate = [NSDate dateWithTimeIntervalSinceNow:0.5];
+          local.alertBody = @"ZCcan";
+          local.timeZone = [NSTimeZone defaultTimeZone];
+          
+          [[UIApplication sharedApplication] scheduleLocalNotification:local];
+          // info only for comamnd action in jsx means VProcessor tells jsx :gotta next or gottaback
+          
+          
+        }
+        
+        
+        
+        //
+        
+      }
+    }
+  
+ }
+
   else if ( [fileName  isEqual: @"B"]){
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -90,6 +131,8 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
     [defaults synchronize];
     
   }
+  
+ 
   else {}  //some error trap
   
  successCallback(@[@"Write method called" ]);
@@ -105,38 +148,77 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
   - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
     NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
     
-    
-    if ( [hypothesis  isEqual: @"next"] && recognitionScore.integerValue > -150000 ) {
-     
+    NSString *mask=@"";
+    if ( [hypothesis  isEqual: @"next"] && recognitionScore.integerValue >-120000  ) {
+      
       NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
       [defaults setObject:hypothesis   forKey:@"Hoch"];
       [defaults synchronize];
-     
+      mask = @"ZCnext";
     }
     
-    else if ( [hypothesis  isEqual: @"back"] && recognitionScore.integerValue > -150000) {
+    else if ( [hypothesis  isEqual: @"back"] && recognitionScore.integerValue > -120000) {
       NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
       [defaults setObject:hypothesis   forKey:@"Hoch"];
       [defaults synchronize];
+      mask =@"ZCback";
     }
     else {
-      
-      //for the time being do nothing
+      mask =@"ZCerr1"; //this is to be discarded
+      //for the time being .... do nothing see below mo message to jx controller
     }
- 
-  
+    if ([mask  isEqual: @"ZCnext"] || [mask  isEqual:@"ZCback"]) {
+        UILocalNotification* local = [[UILocalNotification alloc]init];
+        if (local)
+        {
+            local.fireDate = [NSDate dateWithTimeIntervalSinceNow:0.5];
+            local.alertBody = mask;
+            local.timeZone = [NSTimeZone defaultTimeZone];
+      
+            [[UIApplication sharedApplication] scheduleLocalNotification:local];
+      // info only for comamnd action in jsx means VProcessor tells jsx :gotta next or gottaback
+      
+      
+        }
+      
+      
+    }
+  //}
+
+
 }
 
-// Load data from disk and return the String.
+// Operational Timer Action received .
 RCT_EXPORT_METHOD(readFile:(NSString *)fileName
                   errorCallback:(RCTResponseSenderBlock)failureCallback
                   callback:(RCTResponseSenderBlock)successCallback) {
   
   NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
-  //for teh time being not used
+  UILocalNotification* local = [[UILocalNotification alloc]init];
+  if (local)
+  {
+   NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+   numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    
+  float delta = [numberFormatter numberFromString:fileName].floatValue;
+    float delta1 =delta -10.0;
+    
+  //double delta=40.0;
+  local.fireDate = [NSDate dateWithTimeIntervalSinceNow:delta];
+  local.alertBody = @"A Recipe Waiting Timer  ended !!!";
+  local.timeZone = [NSTimeZone defaultTimeZone];
+  local.applicationIconBadgeNumber= 999;
+  [[UIApplication sharedApplication] scheduleLocalNotification:local];
+    //double delta=40.0;
+    local.fireDate = [NSDate dateWithTimeIntervalSinceNow:delta1];
+    local.alertBody = @"A Recipe Waiting Timer GOTTA FINSH SOON  !!!";
+    local.timeZone = [NSTimeZone defaultTimeZone];
+    local.applicationIconBadgeNumber= 777;
+    [[UIApplication sharedApplication] scheduleLocalNotification:local];
+
  // successCallback(@[@"Read method called"]);
 }
 
-
+}
 
 @end

@@ -8,10 +8,21 @@
  */
 
 #import <UIKit/UIKit.h>
-
+#import "dbm.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (nonatomic, strong) DBManager *dbManager;
 @property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong) NSArray *arrPeopleInfo;
 
 @end
 
+@interface MyManager : NSObject {
+  NSString *someProperty;
+  NSArray *somearr;
+}
+
+@property (nonatomic, retain) NSString *someProperty;
+@property (nonatomic, retain) NSArray  *somearr;
++ (id)sharedManager;
+
+@end

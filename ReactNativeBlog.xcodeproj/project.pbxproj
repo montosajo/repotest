@@ -68,7 +68,10 @@
 		7C7202D51CFFACB400F0204D /* n2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C7202D41CFFACB400F0204D /* n2.mp3 */; };
 		7C9585AD1CEB956600D9C069 /* Hoja6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7C9585AC1CEB956500D9C069 /* Hoja6.JPG */; };
 		7C9585BA1CEBB3A800D9C069 /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C9585B91CEBB3A800D9C069 /* AcousticModelSpanish.bundle */; };
+		7CACAE741D2EDAAC00A62D42 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CACAE731D2EDAAC00A62D42 /* libsqlite3.tbd */; };
+		7CACAE831D2EDC7300A62D42 /* dbm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CACAE821D2EDC7300A62D42 /* dbm.m */; };
 		7CC2DBE31D07511200D13221 /* ajax-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7CC2DBE21D07511200D13221 /* ajax-loader.gif */; };
+		7CF6C8FB1D32F78600B2F790 /* sampledb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6C8FA1D32F78600B2F790 /* sampledb.sql */; };
 		7CFEA3E31D132097001A960C /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFEA3E21D13200E001A960C /* libRCTPushNotification.a */; };
 		7CFEA3E81D133C72001A960C /* UIresa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFEA3E61D133C72001A960C /* UIresa.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -240,7 +243,11 @@
 		7C7202D41CFFACB400F0204D /* n2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = n2.mp3; sourceTree = "<group>"; };
 		7C9585AC1CEB956500D9C069 /* Hoja6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoja6.JPG; sourceTree = "<group>"; };
 		7C9585B91CEBB3A800D9C069 /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		7CACAE731D2EDAAC00A62D42 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7CACAE811D2EDBE200A62D42 /* dbm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dbm.h; sourceTree = "<group>"; };
+		7CACAE821D2EDC7300A62D42 /* dbm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbm.m; sourceTree = "<group>"; };
 		7CC2DBE21D07511200D13221 /* ajax-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ajax-loader.gif"; sourceTree = "<group>"; };
+		7CF6C8FA1D32F78600B2F790 /* sampledb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; name = sampledb.sql; path = ../../../../Downloads/SQLite3DBSample/sampledb.sql; sourceTree = "<group>"; };
 		7CFEA3DD1D13200C001A960C /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
 		7CFEA3E61D133C72001A960C /* UIresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIresa.m; sourceTree = "<group>"; };
 		7CFEA3E71D133C72001A960C /* UIresa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIresa.h; sourceTree = "<group>"; };
@@ -259,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CACAE741D2EDAAC00A62D42 /* libsqlite3.tbd in Frameworks */,
 				7C633C761CD9485000C672D1 /* AVFoundation.framework in Frameworks */,
 				7C633C741CD9484600C672D1 /* AudioToolbox.framework in Frameworks */,
 				7C2153B61CB5B45800C7C8F1 /* libRNSound.a in Frameworks */,
@@ -503,6 +511,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7CF6C8FA1D32F78600B2F790 /* sampledb.sql */,
+				7CACAE811D2EDBE200A62D42 /* dbm.h */,
+				7CACAE821D2EDC7300A62D42 /* dbm.m */,
+				7CACAE731D2EDAAC00A62D42 /* libsqlite3.tbd */,
 				7CFEA3DC1D12F686001A960C /* testthings */,
 				7C633C751CD9485000C672D1 /* AVFoundation.framework */,
 				7C633C731CD9484600C672D1 /* AudioToolbox.framework */,
@@ -774,6 +786,7 @@
 				7C7202C81CFF635400F0204D /* drum01.mp3 in Resources */,
 				7C6C2B3B1CD0008000D58A0E /* Ionicons.ttf in Resources */,
 				7C4376251CC6F6BA00AECFE8 /* 3227-747.mp3 in Resources */,
+				7CF6C8FB1D32F78600B2F790 /* sampledb.sql in Resources */,
 				7C6C2B3D1CD0008000D58A0E /* Entypo.ttf in Resources */,
 				7C43763E1CC6F6E300AECFE8 /* 3227-800.mp3 in Resources */,
 				7C4376161CC6F5F400AECFE8 /* 3227-1257.mp3 in Resources */,
@@ -822,6 +835,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CACAE831D2EDC7300A62D42 /* dbm.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				7C633C3B1CD7C70100C672D1 /* MCFileWriterUtil.m in Sources */,
 				7C69EF581CD536F300FB0341 /* CM1.m in Sources */,
