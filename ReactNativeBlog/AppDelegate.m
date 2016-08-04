@@ -15,8 +15,14 @@
 #import "RCTRootView.h"
 #import "RCTPushNotificationManager.h"
 #import "dbm.h"
+#import "Orientation.h" //
 @implementation MyManager
-@synthesize somearr;
+
+@synthesize arr1;
+@synthesize image;
+@synthesize recipe;
+@synthesize step;
+@synthesize timer;
 @synthesize someProperty;
 
 + (id)sharedManager {
@@ -30,8 +36,12 @@
 
 - (id)init {
   if (self = [super init]) {
-    someProperty = @"TRRRROOOLO Default Property Value";
-    somearr=nil;
+    someProperty = @" Default Property Value";
+     arr1=nil;
+     step=nil;
+     recipe=nil;
+     step=nil;
+    timer=nil;
   }
   return self;
 }
@@ -63,7 +73,14 @@
    */
 
  jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=false"];
-
+  for (NSString* family in [UIFont familyNames])
+  {
+    NSLog(@"%@", family);
+    for (NSString* name in [UIFont fontNamesForFamilyName: family])
+    {
+      NSLog(@" %@", name);
+    }
+  }
   /**
    * OPTION 2
    * Load from pre-bundled file on disk. The static bundle is automatically
@@ -86,8 +103,8 @@
   [self.window makeKeyAndVisible];
   // load all db data
  
-  self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"sampledb.sql"];
-  [self loadData];
+  //self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"sampledb.sql"];
+  //[self loadData];
   
   return YES;
   
@@ -97,21 +114,57 @@
   
 
 }
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+  return [Orientation getOrientation];
+}
 -(void)loadData{
-  // Form the query.
-  NSString *query = @"select * from recipe";
-  
-  // Get the results.
-  if (self.arrPeopleInfo != nil) {
-    self.arrPeopleInfo = nil;
-  }
-  self.arrPeopleInfo = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
-    NSLog(@"xxxx");
-  //
-  MyManager *shManager =[MyManager sharedManager];
-  shManager.someProperty =@"XXX";
-  shManager.somearr =_arrPeopleInfo;
-  
+//  
+//   MyManager *shManager =[MyManager sharedManager];
+//  // Form the query.
+//  NSString *query1 = @"select * from recipe";
+//  
+//  // Get the results.
+//  if (self.arr1 != nil) {
+//    self.arr1 = nil;
+//  }
+//  self.arr1= [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query1]];
+//  shManager.recipe =_arr1;
+//  query1 = @"select * from step";
+//  
+//  // Get the results.
+//  if (self.arr1 != nil) {
+//    self.arr1 = nil;
+//  }
+//  self.arr1 = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query1]];
+//  shManager.step=_arr1;
+//  query1 = @"select * from imag";
+//  
+//  // Get the results.
+//  if (self.arr1 != nil) {
+//    self.arr1 = nil;
+//  }
+//  self.arr1 = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query1]];
+//  NSLog(@"Loaded ");
+//  //
+//  shManager.someProperty =@"flag";
+//  shManager.image =_arr1;
+//  query1 = @"select * from timer";
+//  
+//  // Get the results.
+//  if (self.arr1 != nil) {
+//    self.arr1 = nil;
+//  }
+//  self.arr1 = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query1]];
+//  NSLog(@"Loaded ");
+//  //
+//  shManager.someProperty =@"flag";
+//  shManager.timer =_arr1;
+//  /*UIImage *yourImage= [UIImage imageNamed:@"791.jpg"];
+//  NSData *imageData = UIImagePNGRepresentation(yourImage);
+//  NSString *postLength = [NSString stringWithFormat:@"%d", [imageData length]];
+//  */
+//  NSLog(@"base");
+//  
 }
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
 {

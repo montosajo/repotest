@@ -46,10 +46,8 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
   //
   if ( [fileName  isEqual: @"Y"]){
   //
-        //
-  MyManager *shManager =[MyManager sharedManager];
-  NSLog([shManager someProperty]);
-  int wer =   shManager.somearr.count;
+ 
+   
   self.openEarsEventsObserver = [[OEEventsObserver alloc] init];
   [self.openEarsEventsObserver setDelegate:self];
   OELanguageModelGenerator *lmGenerator = [[OELanguageModelGenerator alloc] init];
@@ -83,10 +81,30 @@ RCT_EXPORT_METHOD(writeFile:(NSString *)fileName
   }
   else if ( [fileName  isEqual: @"V"]){
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    /*NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"next"  forKey:@"Hoch"];
-    [defaults synchronize];
+    [defaults synchronize];*/
     
+ 
+    /*
+    MyManager *shManager =[MyManager sharedManager];
+    
+    int i;
+    for (i = 0; i < [[shManager step] count]; i++) {
+      id myArrayElement = [[shManager step] objectAtIndex:i];
+      NSLog( myArrayElement[0] );
+      NSLog(@"xxx");
+    }
+    for (i = 0; i < [[shManager timer] count]; i++) {
+      id myArrayElement = [[shManager timer] objectAtIndex:i];
+      NSLog(@"xxx");
+    }
+    for (i = 0; i < [[shManager image] count]; i++) {
+      id myArrayElement = [[shManager image] objectAtIndex:i];
+      NSLog(@"xxx");
+    }
+
+    */
   
   }
   else if ( [fileName  isEqual: @"Z"]){

@@ -13,16 +13,24 @@
 @property (nonatomic, strong) DBManager *dbManager;
 @property (nonatomic, strong) UIWindow *window;
 @property (nonatomic, strong) NSArray *arrPeopleInfo;
-
+@property (nonatomic, retain) NSArray  *arr1;
 @end
 
 @interface MyManager : NSObject {
-  NSString *someProperty;
-  NSArray *somearr;
+   NSString *someProperty;
+   NSArray *recipe;
+   NSArray *arr1;
+   NSArray *step;
+   NSArray *image;
+   NSArray *timer;
 }
 
 @property (nonatomic, retain) NSString *someProperty;
-@property (nonatomic, retain) NSArray  *somearr;
+@property (nonatomic, retain) NSArray  *arr1;
+@property (nonatomic, retain) NSArray  *recipe;
+@property (nonatomic, retain) NSArray  *step;
+@property (nonatomic, retain) NSArray  *image;
+@property (nonatomic, retain) NSArray  *timer;
 + (id)sharedManager;
 
 @end

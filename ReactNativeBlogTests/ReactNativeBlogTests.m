@@ -12,7 +12,7 @@
 //#import "RCTLog.h"
 //#import "RCTRootView.h"
 
-#define TIMEOUT_SECONDS 240
+#define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React Native!"
 
 @interface ReactNativeBlogTests : XCTestCase
@@ -41,11 +41,11 @@
   BOOL foundElement = NO;
 
   __block NSString *redboxError = nil;
-  //RCTSetLogFunction(^(RCTLogLevel level, RCTLogSource source, NSString *fileName, NSNumber *lineNumber, NSString *message) {
-  //  if (level >= RCTLogLevelError) {
-    //  redboxError = message;
-   // }
-  //});
+ /* RCTSetLogFunction(^(RCTLogLevel level, RCTLogSource source, NSString *fileName, NSNumber *lineNumber, NSString *message) {
+    if (level >= RCTLogLevelError) {
+      redboxError = message;
+    }
+  });*/
 
   while ([date timeIntervalSinceNow] > 0 && !foundElement && !redboxError) {
     [[NSRunLoop mainRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
