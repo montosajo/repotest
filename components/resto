@@ -1,0 +1,30 @@
+@implementation MyCustomView
+
+
+{
+    UIColor *squareColor;
+}
+
+- (void)setIsRed:(BOOL)isRed
+{
+  
+  if (isRed ==false){
+    
+    
+  }
+  else {
+    
+    squareColor= (isRed)  ? [UIColor redColor] : [UIColor greenColor];
+    ;
+  }
+  
+}
+- (void)viewDidDisappear:(BOOL)animated {
+  NSLog(@"faaaaaa");
+}
+- (void)drawRect:(CGRect)rect
+{
+  [squareColor setFill];
+  CGContextFillRect(UIGraphicsGetCurrentContext(), rect);
+  
+
